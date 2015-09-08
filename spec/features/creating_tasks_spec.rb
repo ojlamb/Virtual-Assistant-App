@@ -1,7 +1,4 @@
-require 'byebug'
-
 feature 'Creating tasks' do
-
   scenario 'I can create a new tasks if I am signed in' do
     user = create :user
     sign_in(user)
@@ -21,5 +18,4 @@ feature 'Creating tasks' do
     visit('/')
     expect(page).not_to have_content('New Task')
   end
-
 end

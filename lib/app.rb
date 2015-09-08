@@ -8,9 +8,7 @@ require_relative 'controllers/session'
 require_relative 'controllers/tasks'
 require './lib/helpers/app_helpers'
 
-
 module VirtualAssistant
-
   class App < Sinatra::Base
     use Rack::MethodOverride
 

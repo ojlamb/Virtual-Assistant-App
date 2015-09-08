@@ -1,7 +1,6 @@
 require 'factory_girl'
 
 FactoryGirl.define do
-
   factory :user do
     email 'raph@test.com'
     password '12345'
@@ -15,5 +14,4 @@ FactoryGirl.define do
     password_confirmation '12345'
     name 'Owen'
   end
-  
 end

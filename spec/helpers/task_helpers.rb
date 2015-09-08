@@ -1,4 +1,4 @@
-module TaskHelpers  
+module TaskHelpers
   def create_task(item, tag)
       visit '/tasks/new'
       fill_in :task, with: item.task

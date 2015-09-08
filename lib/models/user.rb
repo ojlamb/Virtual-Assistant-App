@@ -1,5 +1,4 @@
 require 'bcrypt'
-require 'byebug'
 
 class User
 
@@ -21,7 +20,6 @@ class User
   property :password_token, Text
   property :name, Text
 
-
   def password=(password)
     @password = password
     self.password_digest = BCrypt::Password.create(password)
@@ -31,5 +29,4 @@ class User
     user = first(email: email)
     user && BCrypt::Password.new(user.password_digest) == password ? user : nil
   end
-
 end

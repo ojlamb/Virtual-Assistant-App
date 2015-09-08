@@ -14,7 +14,6 @@ require 'database_cleaner'
 
 Capybara.app = VirtualAssistant::App
 RSpec.configure do |config|
-
   config.include SessionHelpers
   config.include TaskHelpers
 
@@ -44,5 +43,4 @@ RSpec.configure do |config|
   config.after(:each) do
     DatabaseCleaner.clean
   end
-
 end

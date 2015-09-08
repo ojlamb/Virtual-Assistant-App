@@ -4,8 +4,6 @@
 
   %body
     - if current_user
-
-
       .col-sm-4.col-sm-offset-1
         %input#pac-input.controls{:placeholder => "Search Box", :type => "text"}/
         #map
@@ -33,10 +31,6 @@
                   %form{:method => "post", :action => "/tasks/#{tee.id}" }
                     %input{:type => "hidden", :name => "_method", :value => "delete"}
                     %input.btn.btn-danger{:type => "submit", :value => "Delete"}
-
-
-
-
     -else
       %div#header
         Welcome to Virtual Assistant

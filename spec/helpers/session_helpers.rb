@@ -14,5 +14,4 @@ module SessionHelpers
     fill_in :password, with: user.password
     click_button 'Sign in'
   end
-
 end

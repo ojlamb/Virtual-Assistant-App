@@ -1,5 +1,4 @@
 feature 'I can manage my tasks' do
-
   before :each do
     user = create :user
     sign_in(user)
