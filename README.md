@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/ojlamb/Virtual-Assistant-App.svg?branch=master)](https://travis-ci.org/ojlamb/Virtual-Assistant-App)
+
 # Week 6
 
 ###Lab Week.
